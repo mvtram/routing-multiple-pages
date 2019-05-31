@@ -1,0 +1,31 @@
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+  width: 200px;
+  background-color  : rgb(129, 115, 115);
+}
+.example-container {
+  height: 100%;
+}
+.mat-icons {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.side-nav {
+
+}

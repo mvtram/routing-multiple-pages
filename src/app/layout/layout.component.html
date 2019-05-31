@@ -1,0 +1,60 @@
+
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+<div class="side-nav">
+
+  <mat-nav-list>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Dashboard
+
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <a mat-list-item href="#">Calendar</a>
+
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          E commerce
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+
+  </mat-nav-list>
+</div>
+
+  </mat-drawer>
+
+
+<mat-toolbar color="primary">
+
+  <mat-toolbar-row>
+  <div class="example-sidenav-content">
+    <button class="mat-icons" type="button" mat-fab (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+    <span>Menu</span>
+    <span class="example-spacer"></span>
+    <a>
+      <mat-icon>menu</mat-icon>
+    </a>
+    <mat-icon class="example-icon" aria-hidden="true" aria-label="Example heart icon">favorite</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+
+</mat-drawer-container>
+
