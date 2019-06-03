@@ -15,8 +15,7 @@
         </mat-expansion-panel-header>
       </mat-expansion-panel>
     </mat-accordion>
-    <a mat-list-item href="#">Calendar</a>
-
+<button [routerLink]="['/server']" routerLinkActive="active" class="btn btn-primary" >server</button>
 
   <mat-accordion>
     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -58,3 +57,4 @@
 
 </mat-drawer-container>
 
+<router-outlet></router-outlet>

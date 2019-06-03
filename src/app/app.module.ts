@@ -3,24 +3,20 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServerRoutingModule } from './server/server-routing.module';
-import { ServerComponent } from './server/server.component';
-import { FormsModule } from '@angular/forms';
-import { LayoutComponent } from './layout/layout.component';
-import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
-import { LayoutModule } from '@angular/cdk/layout';
-import { LoginRoutingModule } from './login-routing.module';
-import { LayoutRoutingModule } from './layout-routing.module';
-//import { MDBBootstrapModule } from '@angular/angular-bootstrap-md';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { LoginModule } from './login/login.module';
+import { LayoutComponent } from './layout/layout.component';
+import { ServerComponent } from './server/server.component';
+//import { MDBBootstrapModule } from '../../.node_modules/angular-bootstrap-md';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
     LayoutComponent,
-    LoginComponent,
+    ServerComponent
   ],
   imports: [
     HttpClientModule,
@@ -28,10 +24,12 @@ import { LayoutRoutingModule } from './layout-routing.module';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    LayoutModule,
-    LoginRoutingModule,
-    LayoutRoutingModule,
-    //MDBBootstrapModule.forRoot(),
+    RouterModule,
+    LoginModule,
+  AppRoutingModule,
+
+
+     //MDBBootstrapModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
